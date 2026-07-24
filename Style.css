@@ -1,0 +1,351 @@
+/* CONFIGURAÇÃO GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8;
+    color: #222;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 3px solid #b00000;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #d40000;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+
+/* MENU */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d40000;
+}
+
+
+/* BANNER */
+
+#inicio {
+    background: linear-gradient(
+        135deg,
+        #000000,
+        #8b0000
+    );
+
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+
+.banner h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    background-color: #d40000;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.botao:hover {
+    background-color: white;
+    color: #b00000;
+}
+
+
+/* PRODUTOS */
+
+#produtos {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+
+#produtos h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+
+    background-color: white;
+
+    width: 260px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border-top: 5px solid #d40000;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+.card h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.card p {
+
+    margin-bottom: 20px;
+
+}
+
+
+.card span {
+
+    color: #d40000;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+
+
+/* SOBRE */
+
+#sobre {
+
+    background-color: #000;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+}
+
+
+#sobre h2 {
+
+    color: #d40000;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+}
+
+
+#sobre p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.8;
+
+}
+
+
+/* CONTATO */
+
+#contato {
+
+    padding: 70px 20px;
+
+}
+
+
+#contato h2 {
+
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 30px;
+
+}
+
+
+form {
+
+    background-color: white;
+
+    max-width: 500px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+label {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+}
+
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+}
+
+
+button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    background-color: #d40000;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+button:hover {
+
+    background-color: #000;
+
+}
+
+
+/* RODAPÉ */
+
+footer {
+
+    background-color: #000;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    border-top: 3px solid #d40000;
+
+}
+
+
+/* CELULAR */
+
+@media(max-width:768px) {
+
+    header h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    nav ul {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .banner h2 {
+
+        font-size: 30px;
+
+    }
+
+}
